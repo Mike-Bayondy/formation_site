@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fòmasyon Pwofesyonèl TikTok & YouTube -</title>
+    <meta name="description" content="Fòmasyon pwofesyonèl pou kreyatè kontni sou TikTok ak YouTube. Aprann kreye kontni viral epi monetize prezans ou sou rezo sosyal.">
+    <meta name="keywords" content="fòmasyon kreyatè, TikTok, YouTube, monetizasyon, kontni dijital">
+    <meta property="og:title" content="Akademi Kreyatè - Fòmasyon Pwofesyonèl TikTok & YouTube">
+    <meta property="og:description" content="Vin yon kreyatè pwofesyonèl sou rezo sosyal yo.">
+    <meta property="og:image" content="URL_TO_YOUR_IMAGE">
+    <link rel="canonical" href="YOUR_WEBSITE_URL">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            overflow-x: hidden;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Animations 3D */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes rotate3d {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse3d {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50px); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeIn {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: slideIn 0.6s ease;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            animation: rotate3d 5s linear infinite;
+        }
+
+        .nav-cta {
+            background: #1e40af;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: #1e3a8a;
+            transform: translateY(-2px);
+        }
+
+        /* Search bar in nav */
+        .nav-search {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #ffffff;
+            border: 1px solid #e6eefc;
+            padding: 6px 10px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(59,130,246,0.08);
+            max-width: 420px;
+            width: 100%;
+        }
+
+        .nav-search img.search-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .nav-search input[type="search"] {
+            border: none;
+            outline: none;
+            font-size: 0.95rem;
+            color: #0f172a;
+            background: transparent;
+            width: 100%;
+        }
+
+        .nav-search button.search-button {
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .nav-search button.search-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(59,130,246,0.18);
+        }
+
+        /* Responsive: hide full search on small screens, show icon only */
+        .nav-search-full { display: flex; }
+        .nav-search-icon-only { display: none; }
+
+        @media (max-width: 720px) {
+            .nav-search-full { display: none; }
+            .nav-search-icon-only { display: flex; align-items: center; gap: 8px; }
+            .nav-search-icon-only button { background: transparent; border: none; color: #0f172a; font-size: 1.05rem; cursor: pointer; }
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.2) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .cta-button {
+            background: #3b82f6;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #60a5fa;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        section:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #0f172a;
+            font-weight: 800;
+        }
+
+        .section-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .trust-badge:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+        }
+
+        .trust-badge-icon {
+            font-size: 2rem;
+            animation: pulse3d 2s ease infinite;
+        }
+
+        .trust-badge-text {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        /* Modules */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .module-card {
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .module-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
+        }
+
+        .module-icon {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .module-card h3 {
+            color: #0f172a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .module-card p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* Benefits */
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-top: 40px;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 18px;
+            transition: all 0.3s ease;
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .benefit-item:hover {
+            transform: translateX(10px);
+        }
+
+        .benefit-icon {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-content h4 {
+            color: #0f172a;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .benefit-content p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 35px;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+        }
+
+        .rating {
+            color: #fbbf24;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            color: #475569;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .author-avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        .author-photo {
+            width: 55px;
+            height: 55px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Animation au survol */
+        .author-photo {
+            transition: transform 0.3s ease;
+        }
+
+        .author-photo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Fallback pour les images manquantes */
+        .author-photo:not([src]), 
+        .author-photo[src=""] {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+        }
+
+        .author-info h4 {
+            color: #0f172a;
+            font-weight: 700;
+        }
+
+        .author-info p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Pricing */
+        .pricing-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            color: white;
+        }
+
+        .pricing-section h2,
+        .pricing-section .section-intro {
+            color: white;
+        }
+
+        .pricing-container {
+            max-width: 650px;
+            margin: 40px auto;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid #3b82f6;
+            position: relative;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .price {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #1e40af;
+            margin: 20px 0;
+        }
+
+        .price-detail {
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .price-features {
+            text-align: left;
+            margin: 30px 0;
+            background: #EBF5FF;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .price-feature {
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #334155;
+        }
+
+        .price-feature:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+
+        /* Color for check icons inside pricing features (moved from inline styles) */
+        .price-feature .check-icon {
+            color: #3B82F6;
+        }
+
+        .guarantee {
+            margin-top: 25px;
+            padding: 20px;
+            background: #dbeafe;
+            border-radius: 12px;
+            color: #1e40af;
+            font-weight: 600;
+        }
+
+        .discord-cta {
+            margin-top: 20px;
+            padding: 18px;
+            background: #5865f2;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .discord-cta:hover {
+            background: #4752c4;
+            transform: translateY(-3px);
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 22px 28px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #0f172a;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #f8fafc;
+        }
+
+        .faq-toggle {
+            color: #3b82f6;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .faq-answer {
+            padding: 0 28px 22px;
+            color: #64748b;
+            line-height: 1.7;
+            display: none;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 35px;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .modules-grid,
+            .testimonials-grid,
+            .benefits-list { grid-template-columns: 1fr; }
+            .pricing-container { padding: 40px 25px; }
+            .price { font-size: 3.5rem; }
+            .cta-buttons { flex-direction: column; }
+            .cta-button { width: 100%; }
+        }
+
+        /* Ajout des préfixes pour backdrop-filter */
+        .pricing-container {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Animation améliorées */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        /* Optimisation des performances */
+        .module-card, .benefit-item, .testimonial-card {
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        /* Amélioration de l'accessibilité */
+        .cta-button:focus, 
+        .nav-cta:focus {
+            outline: 3px solid #3b82f6;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div style="display:flex;align-items:center;gap:16px;width:100%;">
+                <div class="logo" style="flex:0 0 auto;">
+                    <img src="mPBstDo1SO-he8DstdykNg.webp" alt="Logo 509 Creators" style="width: 40px; height: 40px; border-radius: 8px; margin-right: 10px;">
+                    <span>509 Creators</span>
+                </div>
+
+                <!-- Full search (desktop/tablet) -->
+                <form class="nav-search nav-search-full" role="search" action="#search" method="get" aria-label="Rechèch sou sit la" style="margin-left:12px;flex:1 1 auto;max-width:520px;">
+                    <img src="mPBstDo1SO-he8DstdykNg.webp" alt="" class="search-icon" aria-hidden="true">
+                    <input type="search" name="q" placeholder="Rechèch..." aria-label="Rechèch" />
+                    <button type="submit" class="search-button" aria-label="Rechèch">Chèche</button>
+                </form>
+
+                <!-- Icon-only search (mobile) -->
+                <div class="nav-search-icon-only" style="margin-left:auto;">
+                    <button aria-label="Ouvri rechèch" onclick="document.querySelector('.nav-search-full').classList.toggle('open')">🔍</button>
+                </div>
+
+                <a href="#pricing" class="nav-cta" style="flex:0 0 auto;margin-left:12px;">Enskri kounye a</a>
+            </div>
+         </div>
+     </nav>
+
+    <!-- Hero -->
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🎓 Fòmasyon Sètifye • Pwogram Konplè 4 Semèn</div>
+                <h1>Vin Yon Kreyatè Pwofesyonèl sou TikTok & YouTube</h1>
+                <p class="hero-subtitle">Rantre nan pwogram ekselans nou an pou w aprann kreye kontni viral epi devlope yon aktivite pwofiTab ak dirab sou rezo sosyal yo.</p>
+                <div class="cta-buttons">
+                    <a href="#pricing" class="cta-button">Kòmanse fòmasyon an →</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1,500+</div>
+                        <div class="stat-label">Kreyatè fòme</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500M+</div>
+                        <div class="stat-label">Vi jenere</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3,200€</div>
+                        <div class="stat-label">Revni mwayen pa mwa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Trust -->
+    <section>
+        <div class="container">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">🔒</div>
+                    <div class="trust-badge-text">Peman 100% sekirize</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">Garanti satisfè 30 jou</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">⚡</div>
+                    <div class="trust-badge-text">Aksè imedya 24/7</div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">♾️</div>
+                    <div class="trust-badge-text">Mizajou gratis pou tout tan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation -->
+    <section id="formation">
+        <div class="container">
+            <h2>Pwogram Fòmasyon Estriktire</h2>
+            <p class="section-intro">Yon kous pwofesyonèl 8 semèn pou akonpaye w depi zewo jiska monetizasyon konplè</p>
+            
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">🎯</div>
+                    <h3>Estrateji & Pozisyonman</h3>
+                    <p>Idantifye nich pwofiTab ou, defini piblik sib ou epi konstwi yon estrateji kontni diferan pou w distenge tèt ou nan yon mache ki satire.</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">📱</div>
+                    <h3>Pwoduksyon Videyo</h3>
+                    <p>Metrize teknik avanse pou filme, monte epi rakonte istwa pou kreye videyo pwofesyonèl kaptiyan, menm ak ekipman minimal.</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">📈</div>
+                    <h3>Kwasans Ògànik</h3>
+                    <p>Konprann epi eksplwate algoritm TikTok ak YouTube pou maksimize pote w epi rive nan 100K+ abòne nan 90 jou san depans piblisite.</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">💼</div>
+                    <h3>Monetizasyon Avanse</h3>
+                    <p>Eksplore 7 sous revni konplemantè: ponsòring, afilyasyon, pwodui dijital, coaching, konsiltasyon ak lisans kontni.</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">🤝</div>
+                    <h3>Patènaria & Negosyasyon</h3>
+                    <p>Teknik pwofesyonèl pou atire mak yo, negosye kontra likratif epi etabli patènaria long-term pwofiTab.</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-icon">⚙️</div>
+                    <h3>Sistèm & Otomatizasyon</h3>
+                    <p>Konstwi yon workflow optimize ak sistèm otomatize pou pwodui kontni kalite pandan w ekonomize 15+ èdtan pa semèn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits">
+        <div class="container">
+            <h2>Yon Akonpayman Ekselan</h2>
+            <p class="section-intro">Rezilta ki mezirablak yon metodoloji eprouve ak sipò pèsonalize</p>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📊</div>
+                    <div class="benefit-content">
+                        <h4>Metòd Eprouve</h4>
+                        <p>Estrateji valide pa +500M vi jenere ak +2M€ revni kimilatif pa elèv nou yo nan 18 dènye mwa.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <div class="benefit-content">
+                        <h4>Kominote Aktif</h4>
+                        <p>Rantre nan yon rezo dinamik kreyatè ki pataje eksperyans, konsèy ak opòtinite kolaborasyon.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔄</div>
+                    <div class="benefit-content">
+                        <h4>Mizajou Kontinyèl</h4>
+                        <p>Kontni aktyalize chak mwa pou rete nan pwent tandans yo ak evolisyon algoritm yo sou tout platfòm yo.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <div class="benefit-content">
+                        <h4>Rezilta Rapid</h4>
+                        <p>80% elèv nou yo jenere premye revni yo nan mwens pase 45 jou apre yo kòmanse fòmasyon an.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎁</div>
+                    <div class="benefit-content">
+                        <h4>Resous Pwofesyonèl</h4>
+                        <p>Bibliyotèk konplè template, script, checklist, preset montaj ak asset grafik pare pou itilize.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">♾️</div>
+                    <div class="benefit-content">
+                        <h4>Aksè San Limit</h4>
+                        <p>Konsève aksè pèmanan nan tout modil yo, mizajou fiti ak bonus enkli, san okenn frè siplemantè.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Temwayaj Elèv Nou Yo</h2>
+            <p class="section-intro">Dekouvri kijan fòmasyon nou an transfòme lavi dè santèn kreyatè</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">Fòmasyon eksepsyonèl. Nan 4 mwa san okenn eksperyans anvan, mwen rive nan 450K abòne epi mwen fè 4500€ pa mwa. Fòmasyon sa a chanje lavi m!</p>
+                    <div class="testimonial-author">
+                        <img src="ff00dc3ecfacddb596ccdcc793d03023.jpg" alt="Sophie Martinez" class="author-photo">
+                        <div class="author-info">
+                            <h4>Sophie Martinez</h4>
+                            <p>850K abòne TikTok</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">Nan 2 mwa mwen rive nan 100K abòne sou YouTube. Teknik monetizasyon yo pèmèt mwen jenere 2800€ depi premye mwa. Enkwayab!</p>
+                    <div class="testimonial-author">
+                        <img src="IMG-20250327-WA0012_5457.jpg" alt="Karim Diallo" class="author-photo">
+                        <div class="author-info">
+                            <h4>Karim Diallo</h4>
+                            <p>120K abòne YouTube</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">Kominote a eksepsyonèl. Mwen aprann plis nan 1 mwa pase 2 ane ap eseye pou kont mwen. Mwen rekòmande 200%, envestisman an vo vrèman kout la.</p>
+                    <div class="testimonial-author">
+                        <img src="images.jpeg" alt="Laura Chen" class="author-photo">
+                        <div class="author-info">
+                            <h4>Laura Chen</h4>
+                            <p>450K abòne TikTok</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2>Envesti nan Avni W</h2>
+            <p class="section-intro">Yon peman inik pou aksè pou tout tan</p>
+            
+            <div class="pricing-container">
+                    <div class="price-feature">
+                        <span class="check-icon">✓</span>
+                        <div>Tout modil fòmasyon yo</div>
+                    </div>
+                <div class="price-features">
+                    <div class="price-feature">
+                        <span class="check-icon">✓</span>
+                        <div>Resous telechajman dirèk</div>
+                    </div>
+
+                    <div class="price-feature">
+                        <span class="check-icon">✓</span>
+                        <div>Aksè a kominote prive a</div>
+                    </div>
+
+                    <div class="price-feature">
+                        <span class="check-icon">✓</span>
+                        <div>Sesyon Q&A chak semèn</div>
+                    </div>
+
+                    <div class="price-feature">
+                        <span class="check-icon">✓</span>
+                        <div>Garanti satisfaksyon 30 jou</div>
+                    </div>
+
+                    <div class="price-feature">
+                        <span class="check-icon" style="color: #3B82F6;">✓</span>
+                        <div>Garanti satisfaksyon 30 jou</div>
+                    </div>
+                </div>
+
+                <div class="guarantee">
+                    Si ou pa satisfè ak fòmasyon an, nou pral remèt ou lajan an san kesyon poze nan 30 premye jou yo.
+                </div>
+
+                <a href="#peye" class="discord-cta">Peye</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2>Kesyon Yo Poze Souvan</h2>
+            <p class="section-intro">Reponn kesyon ou yo anvan ou pran desizyon an</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Ki sa ki enkli nan fòmasyon an?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Fòmasyon an enkli aksè a tout modil yo, resous telechajman, aksè a kominote prive a, sesyon Q&A chak semèn, ak yon garanti satisfaksyon 30 jou.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Kijan pou mwen peye?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ou ka fè yon peman inik atravè kat kredi, PayPal, oswa lòt metòd peman ki disponib sou platfòm nan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Èske gen yon garanti?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wi, nou ofri yon garanti satisfaksyon 30 jou. Si ou pa satisfè ak fòmasyon an, ou ka mande yon ranbousman san okenn kesyon poze.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Kijan mwen ka kontakte sipò kliyan an?
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ou ka kontakte ekip sipò kliyan an atravè imèl, chat sou entènèt, oswa atravè kanal sipò ki nan kominote prive a sou Discord.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section>
+        <div class="container">
+            <div class="final-cta">
+                <h2>Pa Pèdi Tan!</h2>
+                <p>Rantre nan ranje kreyatè ki ap fè siksè yo epi transfòme pasyon ou an pwofi. Enskri kounye a pou jwenn aksè imedya a fòmasyon an!</p>
+                <a href="#pricing" class="cta-button">Enskri Kounye a</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">509</div>
+                    <span>509 Creators</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#formation">Fòmasyon</a>
+                    <a href="#benefits">Benefis</a>
+                    <a href="#testimonials">Temwayaj</a>
+                    <a href="#pricing">Pri</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-socials">
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 509 Creators. Tout dwa rezève.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- En bas de la page, avant </body> -->
+<script>
+    // Chargement différé des images
+    document.addEventListener('DOMContentLoaded', function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+        if ("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        }
+    });
+
+    // Animation au défilement
+    const observerOptions = {
+        root: null,
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.module-card, .benefit-item, .testimonial-card').forEach((el) => {
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>
